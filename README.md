@@ -1,6 +1,6 @@
 # Frontend Mentor - API REST Countries
 
-Esta es una solución para el [desafío de la API REST Countries](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de programación construyendo proyectos realistas.
+Esta es una solución para el [desafío de la API REST Countries](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
 ## Descripción general
 
