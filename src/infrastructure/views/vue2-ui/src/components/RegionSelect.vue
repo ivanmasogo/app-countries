@@ -1,21 +1,27 @@
 <template lang="pug">
-  .select-container
-    select(
-      :value="region"
-      @change="$emit('input', $event.target.value)"
-      id="selectInput"
-      :class="{'dark-mode-elements': getMode === 'dark'}"
-    ) 
-      option( value="" disabled hidden) Filter by region
-      option(v-for="option in options" :key="option.value" :value="option.value")
-        | {{ option.text }}
+.select-container
+  select(
+    v-model="internalRegion" 
+    id="selectInput"
+    :class="{'dark-mode-elements': getMode === 'dark'}"
+  ) 
+    option(value="" disabled hidden) Filter by region
+    option(v-for="option in options" :key="option.value" :value="option.value")
+      | {{ option.text }}
+
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 
 export default {
-  props: ['region'],
+  name: 'RegionSelect',
+  props: {
+    region: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
     return {
       options: [          
@@ -24,13 +30,23 @@ export default {
         { value: 'Asia', text: 'Asia' },
         { value: 'Europe', text: 'Europe' },
         { value: 'Oceania', text: 'Oceania' }
-      ]
+      ],
+      internalRegion: this.region 
     };
   },
   computed: {
     ...mapGetters(['getMode'])
   },
+  watch: {
+    region(newValue) {
+      this.internalRegion = newValue;
+    },
+    internalRegion(newValue) {
+      this.$emit('input', newValue);
+    }
+  }
 };
+
 </script>
 
 <style scoped lang="scss">

@@ -1,5 +1,5 @@
 <template lang="pug">
-.navbar
+.navbar(:class="{'dark-mode-elements': getMode === 'dark'}")
   .col-9.mx-auto
     .navbar__container.d-flex.flex-row.justify-content-between.align-items-center.my-2.my-lg-4
       router-link(:to="{name: 'home'}").navbar__container__question.my-auto Where in the world?

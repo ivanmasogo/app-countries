@@ -2,8 +2,7 @@
   .search-bar
     font-awesome-icon(:icon="['fas','magnifying-glass']").icon
     input(
-      :value="search"
-      @keyup="$emit('input', $event.target.value)"
+      v-model="internalSearch",
       type="text"
       placeholder="Search for a country..."
       :class="{'dark-mode-elements': getMode === 'dark'}"
@@ -14,10 +13,29 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  props: ['search'],
+  name: 'SearchButton',
+  props: {
+    search: {
+      type: String,
+      default: ''
+    }
+  },
+  data(){
+    return {
+      internalSearch: this.search 
+    }
+  },
   computed: {
     ...mapGetters(['getMode'])
   },
+  watch: {
+    search(newValue) {
+      this.internalSearch = newValue;
+    },
+    internalSearch(newValue) {
+      this.$emit('input', newValue);
+    }
+  }
 };
 </script>
 
