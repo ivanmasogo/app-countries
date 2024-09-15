@@ -1,6 +1,6 @@
 # Frontend Mentor - API REST Countries
 
-Esta es una solución para el [desafío de la API REST Countries](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de programación construyendo proyectos realistas.
+Esta es una solución para el [desafío de la API REST Countries](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
 ## Descripción general
 
@@ -26,8 +26,6 @@ Los usuarios deben poder:
 ### Arquitectura Hexagonal
 
 Este proyecto ha sido desarrollado con el objetivo de explorar las ventajas de la **Arquitectura Hexagonal**. Al seguir este enfoque arquitectónico, la lógica de negocio principal está desacoplada de frameworks externos como Vue.js. Esto permite una mayor flexibilidad, facilitando el cambio o la actualización de frameworks sin afectar la funcionalidad central. La estructura promueve un código más limpio, mayor capacidad de prueba y mejor mantenibilidad.
-
-Además, debido al desacoplamiento, se podría reemplazar Vue.js por React o Angular en el mismo proyecto reutilizando toda la lógica central del negocio sin grandes modificaciones en la arquitectura del proyecto.
 
 ## Cómo empezar (Get Started)
 
