@@ -9,6 +9,7 @@
   "author": "Ivan Martin Masogo",
   "license": "ISC",
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "axios": "^1.7.7"
   }
 }
