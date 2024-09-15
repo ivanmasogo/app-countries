@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import './_variables';
+
+body {
+  background-color: $very-light-gray-bg;
+  color: $very-dark-blue-text;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.homepage-items {
+  font-size: $homepage-font-size;
+}
+
+.detail-page-items {
+  font-size: $detail-page-font-size;
+}
+
+.dark-mode {
+  background-color: $very-dark-blue-bg;
+  color: $white;
+}
+
+.dark-mode-elements {
+  background-color: $dark-blue ! important;
+  color: $white;
+}
