@@ -31,7 +31,6 @@ interface ICountryDetails {
 
 export default Vue.extend({
   name: 'CountryCard',
-  
   props: {
     details: {
       type: Object as PropType<ICountryDetailed>,

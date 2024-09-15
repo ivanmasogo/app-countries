@@ -14,7 +14,6 @@ import { mapActions, mapGetters } from 'vuex';
 
 export default Vue.extend({
   name: 'NavBar',
-
   computed: {
     ...mapGetters(['getMode'])
   },
