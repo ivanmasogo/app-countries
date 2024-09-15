@@ -41,7 +41,7 @@
                   | {{ details.languages}}
             .row.mt-4(v-if="details?.borders?.length > 0")
               p.bold.details__container__info__details__border-title.mb-2 Border Countries:
-              .d-flex.flex-row.flex-wrap.gap-2.justify-content-center.justify-content-lg-center
+              .d-flex.flex-row.flex-wrap.gap-2.justify-content-center.justify-content-lg-start
                 BorderCountries(
                   v-for="(item, index) in details.borders"
                   :key="`${item}-${index}`"
