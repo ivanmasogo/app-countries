@@ -34,7 +34,7 @@ Para ejecutar el proyecto localmente, sigue los siguientes pasos:
 1. Clona el repositorio:
 
     ```bash
-    git clone https://github.com/ivanmasogo/rest-countries-app.git
+    git clone https://github.com/ivanmasogo/app-countries.git
     ```
 
 2. Navega a la carpeta del proyecto:
